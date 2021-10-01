@@ -1,28 +1,54 @@
-window.addEventListener('DOMContentLoaded', e => {
-    let domElements = document.getElementsByTagName("body")[0].getElementsByTagName("*");
-    for (let i = 0; i < domElements.length; i++) {
-        //const element = domElements[i];
-        let element = new Element(domElements[i])
-        element.scan()
-    }
-});
 
-class Element {
-    constructor(element) {
-        this.element = element;
-        this.classes = element.classList;
+class content {
+    constructor(selector, selectors) {
+        this.selector = selector
+        this.selectors = selectors
     }
-    scan() {
-        console.log(this.classes)
-        for (let i = 0; i < this.classes.length; i++) {
-            const elementClass = this.classes[i];
-            if (elementClass.includes("w-"))
-                this.width(elementClass)
+    run() {
+        for (let i = 0; i < this.selectors.length; i++) {
+            const selector = this.selectors[i];
+            const level = i
+            for (let i = 0; i < selector.length; i++) {
+                console.log(selector[i])
+                let text = selector[i].innerText;
+                let id = "";
+                let heigh = selector[i].getBoundingClientRect().top;
+                list.push({ text, id, heigh, level, selector: selector[i] })
+            }
         }
+        list = list.slice(0);
+        list.sort(function (a, b) {
+            return a.heigh - b.heigh;
+        });
+        console.log(list);
     }
-    width(elementClass) {
-        console.log(elementClass)
+    create() {
+        let li = "";
+        for (let i = 0; i < list.length; i++) {
+            li += `<li class="content--${list[i].level}">${list[i].text}</li>`
+        }
+        let out = `<ul class="content__list">${li}</ul>`;
+        console.log(this.selector)
+        this.selector.innerHTML += out
+        for (let i = 0; i < list.length; i++) {
+            this.selector.getElementsByTagName("li")[i].addEventListener("click", e => {
+                //console.log("cs")
+                let oldId = list[i].selector.id
+                list[i].selector.id = `content--scroll${i}`
+                location.href = "#";
+                location.href = `#content--scroll${i}`;
+                list[i].selector.id = oldId
+            })
+
+        }
     }
 }
 
-let classes = [];
+
+
+window.addEventListener('DOMContentLoaded', () => {
+    let contentWindow = new content(document.getElementById("content"), [document.getElementsByTagName("h1"), document.getElementsByTagName("h2"), document.getElementsByTagName("h3")])
+    contentWindow.run()
+    contentWindow.create()
+});
+let list = []
