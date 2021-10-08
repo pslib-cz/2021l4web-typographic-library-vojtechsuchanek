@@ -15,19 +15,21 @@ Link to **[demo](https://pslib-cz.github.io/2021l4web-typographic-library-vojtec
 </head>
 ```
 ## Implementation
-You have to create ```html
+You have to create div, with id that you will refer in your script soon.
+```html
 <div id="content"></div>
 ```
-You need ti initialize script
+After that you need to initialize the script.
 ```js
 <script>
-    let contentWindow = new content(document.getElementById("content"), [document.getElementsByTagName("h1"), document
-        .getElementsByTagName("h2"), document.getElementsByTagName("h3")
+    new content(document.getElementById("content"), 
+    [
+    document.getElementsByTagName("h1"), /* Selector level 1 */
+    document.getElementsByTagName("h2"), /* Selector level 2 */
+    document.getElementsByTagName("h3")  /* Selector level 3 */
+    //... you can use up to 5 selectors
     ])
 </script>
 ```
 ## Usage
-...
-## Components
-### First
-### Second
+This script is useful if you need to browse the headings in your document and then scroll through them.
