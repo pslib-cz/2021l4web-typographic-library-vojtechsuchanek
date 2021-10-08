@@ -12,7 +12,7 @@ class content {
             const selector = this.selectors[i];
             const level = i
             for (let i = 0; i < selector.length; i++) {
-                console.log(selector[i])
+                //console.log(selector[i])
                 let text = selector[i].innerText;
                 let id = "";
                 let heigh = selector[i].getBoundingClientRect().top;
@@ -23,15 +23,15 @@ class content {
         this.list.sort(function (a, b) {
             return a.heigh - b.heigh;
         });
-        console.log(this.list);
+        //console.log(this.list);
     }
     create() {
         let li = "";
         for (let i = 0; i < this.list.length; i++) {
-            li += `<li class="content--${this.list[i].level}">${this.list[i].text}</li>`
+            li += `<li class="content--${this.list[i].level}"><a>${this.list[i].text}</a></li>`
         }
         let out = `<ul class="content__list">${li}</ul>`;
-        console.log(this.selector)
+        //console.log(this.selector)
         this.selector.innerHTML += out
         for (let i = 0; i < this.list.length; i++) {
             this.selector.getElementsByTagName("li")[i].addEventListener("click", e => {
