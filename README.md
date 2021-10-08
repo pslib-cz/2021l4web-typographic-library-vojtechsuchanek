@@ -1,5 +1,5 @@
 # Typography CSS library
-**Author:** *Vojtěch Suchánek*
+**Author:** *Vojtěch Suchánek* <br>
 ![Introduction](docs/imgs/list.png)
 ## Demo site
 Link to **[demo](https://pslib-cz.github.io/2021l4web-typographic-library-vojtechsuchanek/)** site for preview.
@@ -15,6 +15,9 @@ Link to **[demo](https://pslib-cz.github.io/2021l4web-typographic-library-vojtec
 </head>
 ```
 ## Implementation
+You have to create ```html
+<div id="content"></div>
+```
 You need ti initialize script
 ```js
 <script>
