@@ -35,7 +35,7 @@ class content {
         this.selector.innerHTML += out
         for (let i = 0; i < this.list.length; i++) {
             this.selector.getElementsByTagName("li")[i].addEventListener("click", e => {
-                console.log("cs")
+                //console.log("cs")
                 let oldId = this.list[i].selector.id
                 this.list[i].selector.id = `content--scroll${i}`
                 location.href = "#";
