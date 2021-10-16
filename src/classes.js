@@ -1,4 +1,3 @@
-
 class content {
     constructor(selector, selectors) {
         this.selector = selector

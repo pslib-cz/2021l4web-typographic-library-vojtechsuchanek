@@ -11,44 +11,249 @@
 </head>
 
 <body>
-    <h1>Heading 1</h1>
-    <p>Lorem ipsum dolor <a>sit amet consectetur adipisici</a>ng elit. Magnam aspernatur iusto maxime ipsa debitis. Non
-        voluptatem explicabo illum placeat ad! Repellat ullam soluta est repellendus accusantium sed cupiditate. Quis,
-        quisquam.</p>
-    <h2>Heading 2</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aspernatur iusto maxime ipsa debitis. Non
-        voluptatem explicabo illum placeat ad! Repellat ullam soluta est repellendus accusantium sed cupiditate. Quis,
-        quisquam.</p>
-    <h2>Heading 3</h2>
-    <p>Lorem ipsum d<a>olor sit amet co</a>nsectetur adipisicing elit. Magnam aspernatur iusto maxime ipsa debitis. Non
-        voluptatem explicabo illum placeat ad! Repellat ullam soluta est repellendus accusantium sed cupiditate. Quis,
-        quisquam.</p>
-    <h3>Heading 4</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aspernatur iusto maxime ipsa debitis. Non
-            voluptatem explicabo illum placeat ad! Repellat ullam soluta est repellendus accusantium sed cupiditate.
-            Quis, quisquam.</p>
-        <h3>Heading 5</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aspernatur iusto maxime ipsa debitis. Non
-                voluptatem explicabo illum placeat ad! Repellat ullam soluta est repellendus accusantium sed cupiditate.
-                Quis, quisquam.</p>
-            <h3>Heading 6</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aspernatur iusto maxime ipsa debitis.
-                    Non voluptatem explicabo illum placeat ad! Repellat ullam soluta est repellendus accusantium sed
-                    cupiditate. Quis, quisquam.</p>
-                <h2>Heading 7</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aspernatur iusto maxime ipsa debitis.
-                    Non voluptatem explicabo illum placeat ad! Repellat ullam soluta est repellendus accusantium sed
-                    cupiditate. Quis, quisquam.</p>
-                <h3>Heading 8</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aspernatur iusto maxime ipsa
-                        debitis. Non voluptatem explicabo illum placeat ad! Repellat ullam soluta est repellendus
-                        accusantium sed cupiditate. Quis, quisquam.</p>
-                    <h3>Heading 9</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aspernatur iusto maxime ipsa
-                            debitis. Non voluptatem explicabo illum placeat ad! Repellat ullam soluta est repellendus
-                            accusantium sed cupiditate. Quis, quisquam.</p>
-                            <a>Animated underline</a>
-                        <div id="content"></div>
+    <header class="main-header">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">Vojtíkova knihovna</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#typography">Typography</a></li>
+                    <li><a href="#quotes">Quotes</a></li>
+                    <li><a href="#lists">Lists</a></li>
+                    <li><a href="#image-gallery">Image gallery</a></li>
+                    <li><a href="#forms">Forms</a></li>
+                    <li><a href="typography.css" download="typography.css">Download</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- <div id="content"></div> -->
+    <main>
+        <div class="background">
+            <h1 id="heading">Best typographics library</h1>
+        </div>
+        <section id="typography" class="container wrapper">
+            <h3>Typography</h3>
+            <h1>Heading <span> <code>&lt;h1&gt;</code></span></h1>
+            <h2>Heading <span><code>&lt;h2&gt;</code></span></h2>
+            <h3>Heading <span><code>&lt;h3&gt;</code></span></h3>
+            <h4>Heading <span><code>&lt;h4&gt;</code></span></h4>
+            <h5>Heading <span><code>&lt;h5&gt;</code></span></h5>
+            <h6>Heading <span><code>&lt;h6&gt;</code></span></h6>
+        </section>
+        <section class="wrapper">
+            <h3>Diferent types of text <span><code>&lt;a&gt; &lt;b&gt; &lt;u&gt; &lt;s&gt; &lt;mark&gt;
+                        &lt;small&gt;</code></span></h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <a href="#">clickable</a>
+                Lorem <b>bold</b> sit amet <span class="uppercase">uppercase</span> adipisicing elit. <u>underline</u>
+            </p>
+            <p>Lorem <s>striked</s> sit amet consectetur adipisicing elit. Accusamus, facere veniam? <mark>This is
+                    marked</mark> Neque?</p>
+            <p>Lorem <small>small</small> r sit amet.</p>
+        </section>
+        <section id="quotes" class="container wrapper">
+            <h2 class="title">Blockquotes</h2>
+
+
+            <div>
+                <h3>Text in quotion marks</h3>
+                <p>
+                    <q>Lorem ipsum dolor sit amet consectetur adipisicing.</q>
+                    <br>
+                    <q>Lorem ipsum dolor, sit amet consectetur adipisicing.</q>
+                    <br>
+                    <q>Lorem ipsum dolor sit amet.</q>
+                </p>
+            </div>
+            <div>
+                <h3>Quotes</h3>
+                <blockquote class="blockquote">
+                    Creativity is just connecting things. When you ask creative people how they did something, they feel
+                    a little guilty because they didn't really do it, they just saw something. It seemed obvious to them
+                    after a while. That's because they were able to connect experiences they've had and synthesize new
+                    things.
+                    <span>Steve Jobs</span>
+                </blockquote>
+
+            </div>
+
+        </section>
+
+        <section class="container wrapper" id="lists">
+            <h2 class="title">Lists</h2>
+
+            <div class="example">
+                <div class="space-after">
+                    <ul class="list-style">
+                        <li>Unordered list item 1</li>
+                        <li>Unordered list item 2</li>
+                        <li>Unordered list item 3
+                            <ul class="list-style">
+                                <li>Unordered list item 3.1</li>
+                                <li>Unordered list item 3.2</li>
+                                <li>Unordered list item 3.3</li>
+                            </ul>
+                        </li>
+                        <li>Unordered list item 4</li>
+                        <li>Unordered list item 5</li>
+                    </ul>
+                </div>
+                <div class="space-after">
+                    <ol class="list-style">
+                        <li>Ordered list item 1</li>
+                        <li>Ordered list item 2</li>
+                        <li>Ordered list item 3
+                            <ol>
+                                <li>Ordered list item 3.1</li>
+                                <li>Ordered list item 3.2</li>
+                                <li>Ordered list item 3.3</li>
+                            </ol>
+                        </li>
+                        <li>Ordered list item 4</li>
+                        <li>Ordered list item 5</li>
+                    </ol>
+                </div>
+                <div class="space-after">
+                    <dl class="list-style">
+                        <dt>Description list item 1</dt>
+                        <dt>Description list item 2</dt>
+                        <dt>Description list item 3</dt>
+                        <dd>Description list item 3.1</dd>
+                        <dd>Description list item 3.2</dd>
+                        <dd>Description list item 3.3</dd>
+                        <dt>Description list item 4</dt>
+                        <dt>Description list item 5</dt>
+                    </dl>
+                </div>
+            </div>
+        </section>
+        <section class="container" id="image-gallery">
+            <h2 class="wrapper title">Image gallery</h2>
+            <div class="container-all">
+                <div class="image-container">
+                    <a href="https://bit.ly/2PvlS8Z"><img src="https://bit.ly/2PvlS8Z" alt=""></a>
+                    <span class="title">Lorem ipsum dolor</span>
+                </div>
+                <div class="image-container">
+                    <a href="https://bit.ly/2PXNumM"><img src="https://bit.ly/2PXNumM" alt=""></a>
+                    <span class="title">Lorem ipsum dolor</span>
+                </div>
+                <div class="image-container">
+                    <a href="https://bit.ly/2KbUszm"><img src="https://bit.ly/2KbUszm" alt=""></a>
+                    <span class="title">Lorem ipsum dolor</span>
+                </div>
+                <div class="image-container">
+                    <a href="https://bit.ly/2FnhYul"><img src="https://bit.ly/2FnhYul" alt=""></a>
+                    <span class="title">Lorem ipsum dolor</span>
+                </div>
+                <div class="image-container">
+                    <a href="https://bit.ly/2FznWrU"><img src="https://bit.ly/2FznWrU" alt=""></a>
+                    <span class="title">Lorem ipsum dolor</span>
+                </div>
+                <div class="image-container">
+                    <a href="https://bit.ly/2zd3HLf"><img src="https://bit.ly/2zd3HLf" alt=""></a>
+                    <span class="title">Lorem ipsum dolor</span>
+                </div>
+            </div>
+        </section>
+        <section class="wrapper">
+            <h2 class="title">Image</h2>
+            <img src="https://bit.ly/2zd3HLf" alt="">
+        </section>
+        <section class="wrapper">
+            <h2 class="title">Buttons</h2>
+
+            <div>
+                <button class="button">Button1</button>
+                <button class="button">Button2</button>
+                <button class="button">Button3</button>
+            </div>
+
+
+        </section>
+        <section class="tables" id="tables">
+            <h2>Tables</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Height</th>
+                        <th>Favourite food</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Leroy Kay</td>
+                        <td>13</td>
+                        <td>2.06 m</td>
+                        <td>Pizza</td>
+                    </tr>
+                    <tr>
+                        <td>Emma-Louise Appleton</td>
+                        <td>32</td>
+                        <td>1,91 m</td>
+                        <td>Apple pie</td>
+                    </tr>
+                    <tr>
+                        <td>Juanita Eastwood</td>
+                        <td>21</td>
+                        <td>2,01 m</td>
+                        <td>Kebab</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="forms" class="wrapper">
+            <h2>Forms</h2>
+            <div class="form">
+                <form action="/action_page.php">
+                    <label for="fname">Text</label>
+                    <input type="text" id="text" name="text" liplaceholder="You can write some text">
+                    <label for="email">Email </label>
+                    <input type="email" id="email" placeholder="Email">
+                    <label for="tel">Phone number</label>
+                    <input type="tel" id="tel" placeholder="Phone number">
+
+
+                    <label for="password">Password field</label>
+                    <input type="password" id="password" placeholder="Password">
+                    <label for="selectField">Select field</label>
+
+                    <label for="radioField">Radio field</label>
+                    <div class="radioField">
+                        <input type="radio" id="radio" name="radioField">
+                        <label class="label-inline" for="radioField1">Radio field 1</label>
+                    </div>
+                    <div class="radioField">
+                        <input type="radio" id="radioField2" name="radioField">
+                        <label class="label-inline" for="radioField2">Radio field 2</label>
+                    </div>
+                    <label for="radioField">Checkbox field</label>
+                    <div class="radioField">
+                        <input type="checkbox" id="checkboxField1">
+                        <label class="label-inline" for="checkboxField1">Checkbox field 1</label>
+                    </div>
+                    <div class="radioField">
+                        <input type="checkbox" id="checkboxField2">
+                        <label class="label-inline" for="checkboxField2">Checkbox field 2</label>
+                    </div>
+                    <label for="textareaField">Textarea field</label>
+                    <textarea placeholder="Textarea field" id="textareaField"></textarea>
+                    <input type="submit">
+                    <input type="reset" class="button-clear">
+                </form>
+            </div>
+        </section>
+
+
+
+
+
+    </main>
+
 </body>
 <script>
     new content(document.getElementById("content"), [document.getElementsByTagName("h1"), document
